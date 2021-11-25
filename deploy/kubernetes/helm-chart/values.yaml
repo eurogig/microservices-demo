@@ -43,7 +43,7 @@ carts:
             memory: 2000Mi
         requests:
             cpu: 300m
-            memory: 1000Mi
+            memory: 500Mi
 
 cataloguedb:
     image:
@@ -123,7 +123,7 @@ orders:
             memory: 2000Mi
         requests:
             cpu: 200m
-            memory: 1000Mi
+            memory: 500Mi
 
 payment:
     image:
@@ -149,7 +149,7 @@ queuemaster:
             memory: 1000Mi
         requests:
             cpu: 300m
-            memory: 1000Mi
+            memory: 500Mi
 
 rabbitmq:
     image:
@@ -189,7 +189,7 @@ shipping:
             memory: 2000Mi
         requests:
             cpu: 300m
-            memory: 1000Mi
+            memory: 500Mi
 
 userdb:
     image:
