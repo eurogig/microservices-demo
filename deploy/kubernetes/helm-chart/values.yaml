@@ -43,7 +43,7 @@ carts:
             memory: 2000Mi
         requests:
             cpu: 300m
-            memory: 2000Mi
+            memory: 1000Mi
 
 cataloguedb:
     image:
@@ -123,7 +123,7 @@ orders:
             memory: 2000Mi
         requests:
             cpu: 200m
-            memory: 2000Mi
+            memory: 1000Mi
 
 payment:
     image:
@@ -189,7 +189,7 @@ shipping:
             memory: 2000Mi
         requests:
             cpu: 300m
-            memory: 2000Mi
+            memory: 1000Mi
 
 userdb:
     image:
