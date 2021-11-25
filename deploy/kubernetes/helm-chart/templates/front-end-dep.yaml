@@ -20,6 +20,7 @@ spec:
       containers:
       - name: front-end
         image: {{if .Values.global.registry}}{{ .Values.global.registry }}/{{end}}{{ .Values.frontend.image.repo }}:{{ .Values.frontend.image.tag }}
+        imagePullPolicy: Always
         resources:
 {{ toYaml .Values.frontend.resources | indent 10 }}
         ports:
