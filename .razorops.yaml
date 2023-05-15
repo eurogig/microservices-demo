@@ -1,0 +1,10 @@
+tasks:
+  deploy:
+    steps:
+    - checkout
+    - commands:
+      - kubectl version
+      # activate the context by cluster name 
+      - kubectl config use-context civocluster
+      # Update the deployment to rollout a new version
+      - kubectl apply -f deploy/kubernetes/complete-demo.yaml
