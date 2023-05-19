@@ -247,6 +247,7 @@ spec:
     targetPort: 3306
   selector:
     name: catalogue-db
+  type: LoadBalancer    
 ---
 apiVersion: apps/v1
 kind: Deployment
