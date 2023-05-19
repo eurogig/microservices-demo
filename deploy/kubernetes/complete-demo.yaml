@@ -247,7 +247,6 @@ spec:
     targetPort: 3306
   selector:
     name: catalogue-db
-  type: LoadBalancer    
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -318,6 +317,7 @@ spec:
     nodePort: 30001
   selector:
     name: front-end
+  type: LoadBalancer        
 ---
 apiVersion: apps/v1
 kind: Deployment
